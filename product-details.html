@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody - Fattoush salad</title>
+    <!-- ****** CSS ****** -->
+    <!-- LTR Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- libraries [Font Awesome 6 pro , Swiper , Aos animation , Fancy box] -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- app style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.php">Foody</a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.php" class="nav-link active">Home</a>
+                </li>
+                <li>
+                    <a href="about-us.html" class="nav-link">About us</a>
+                </li>
+                <li>
+                    <a href="restaurants.html" class="nav-link">Restaurants</a>
+                </li>
+                <li>
+                    <a href="contct-us.html" class="nav-link">Contact us</a>
+                </li>
+            </ul>
+            <div class="btns">
+                <!-- if user logged in this link will point to My Account page -->
+                <div class="btn">
+                    <a href="login.php">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Login</span>
+                    </a>
+                </div>
+                <div class="btn">
+                    <a href="shopping-cart.html">
+                        <i class="fa-light fa-bag-shopping"></i>
+                        <span> $00.00</span>
+                    </a>
+                </div>
+                <div class="btn">
+                    <button class="toggler">
+                        <i class="fa-sharp fa-light fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main wrapper -->
+    <main>
+        <!-- intro section -->
+        <section class="section_header">
+            <div class="container d-flex justify-content-between">
+                <div class="navigation">
+                    <h2>
+                        <a href="index.php">Home /</a>
+                        <a href="restaurant.html">Le Jardin Enchanté</a> <br> Fattoush salad
+                    </h2>
+                </div>
+                <div class="thumb_img">
+                    <img src="assets/images/thumb.png" alt="thumb">
+                </div>
+            </div>
+        </section>
+        <!-- propuct details section -->
+        <section class="product-details-section">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6 col-12">
+                        <div class="image">
+                            <img src="assets/images/product-details.jpg" alt="product-details">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="pro_overview">
+                            <h3>Fattoush Salad</h3>
+                            <div class="d-flex gap-5 align-items-center">
+                                <h4>12.99$</h4>
+                                <p class="category">Category: <span>Break Fast</span></p>
+                            </div>
+                            <p>
+                                Fattoush salad is a fresh and vibrant Middle Eastern salad known for its combination of
+                                crisp vegetables and toasted pita bread. It's a light and refreshing dish with a lemony,
+                                tangy dressing that's perfect for warm weather. Fattoush is not only delicious but also
+                                a celebration of colors, textures, and flavors.
+                            </p>
+                            <h6>
+                                Components
+                            </h6>
+                            <ul>
+                                <li>Vegetables</li>
+                                <li>Pita Bread</li>
+                                <li>Herbs</li>
+                                <li>Dressing</li>
+                                <li>Seasonings</li>
+                                <li>Optional Ingredients</li>
+                            </ul>
+                            <div class="d-flex align-items-end gap-5">
+                                <div class="quantity">
+                                    <button>
+                                        <i class="fa-sharp fa-light fa-minus"></i>
+                                    </button>
+                                    <input type="number" value="2" min="1" max="99" step="1" />
+                                    <button>
+                                        <i class="fa-sharp fa-light fa-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="add_cart">
+                                    <button>
+                                        ADD TO CART
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- related_products -->
+        <section class="related_products">
+            <div class="container">
+                <h2>Related Products</h2>
+                <div class="row">
+                    <!-- product -->
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <div class="product-card">
+                            <!-- count -->
+                            <span>
+                                <button>
+                                    <i class="fa-light fa-cart-plus"></i>
+                                </button>
+                            </span>
+                            <!-- image -->
+                            <a href="product-details.html" class="pro_img">
+                                <img src="assets/images/pro1.png" alt="">
+                            </a>
+                            <!-- name - price -->
+                            <div class="pro_info">
+                                <a href="product-details.html">Fattoush salad</a>
+                                <h4>$12.75</h4>
+                            </div>
+                            <!-- description - components -->
+                            <div class="pro_description">
+                                <p>
+                                    Fattoush salad is a delightful Middle Eastern dish renowned
+                                    for its fresh and vibrant flavors.
+                                </p>
+                                <h6>components</h6>
+                                <ul>
+                                    <li>cucumbers</li>
+                                    <li>tomatoes</li>
+                                    <li>herbs</li>
+                                    <li>crispy pita bread</li>
+                                    <li>olive oil</li>
+                                    <li>lemon dressing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product -->
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <div class="product-card">
+                            <!-- count -->
+                            <span>
+                                <button>
+                                    <i class="fa-light fa-cart-plus"></i>
+                                </button>
+                            </span>
+                            <!-- image -->
+                            <a href="product-details.html" class="pro_img">
+                                <img src="assets/images/pro2.png" alt="">
+                            </a>
+                            <!-- name - price -->
+                            <div class="pro_info">
+                                <a href="product-details.html">Belgian waffle </a>
+                                <h4>$35.75</h4>
+                            </div>
+                            <!-- description - components -->
+                            <div class="pro_description">
+                                <p>
+                                    Belgian waffles are a beloved breakfast and dessert treat known for their light,
+                                    airy texture and deep grid pattern.
+                                </p>
+                                <h6>components</h6>
+                                <ul>
+                                    <li>Waffle Batter</li>
+                                    <li>Butter</li>
+                                    <li>Vanilla Extract</li>
+                                    <li>Toppings</li>
+                                    <li>Syrup</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product -->
+                    <div class="col-lg-4 col-md-6 col-12 p-3">
+                        <div class="product-card">
+                            <!-- count -->
+                            <span>
+                                <button>
+                                    <i class="fa-light fa-cart-plus"></i>
+                                </button>
+                            </span>
+                            <!-- image -->
+                            <a href="product-details.html" class="pro_img">
+                                <img src="assets/images/pro3.png" alt="">
+                            </a>
+                            <!-- name - price -->
+                            <div class="pro_info">
+                                <a href="product-details.html">Italian Spaghetti</a>
+                                <h4>$42.75</h4>
+                            </div>
+                            <!-- description - components -->
+                            <div class="pro_description">
+                                <p>
+                                    Spaghetti is a beloved and iconic Italian dish known for its simplicity and
+                                    deliciousness
+                                </p>
+                                <h6>components</h6>
+                                <ul>
+                                    <li>Spaghetti Pasta</li>
+                                    <li>Sauce</li>
+                                    <li>Toppings</li>
+                                    <li>Herbs and Spices</li>
+                                    <li>olive oil</li>
+                                    <li>Garlic</li>
+                                    <li>Vegetables or Meats</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="logo">
+                        <a href="#home">Foody <span></span></a>
+                    </div>
+                    <p>
+                        Foody is not just a website; it's a community of food enthusiasts. Share your foodie
+                        experiences, discover hidden gems, and connect with fellow connoisseurs.
+                    </p>
+                    <div class="social">
+                        <a href="#home"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#home"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#home"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#home"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <h3>Restaurants</h3>
+                    <ul>
+                        <li><a href="#">Italian Pasta</a></li>
+                        <li><a href="#">Beef Burger</a></li>
+                        <li><a href="#">Chinese Sushi</a></li>
+                        <li><a href="#">Italian Pizza</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Payment & Tax</a></li>
+                        <li><a href="#">Order Delivery</a></li>
+                        <li><a href="#">Terms of Services</a></li>
+                        <li><a href="#">My account</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h3>Stay connected</h3>
+                    <form action="">
+                        <input type="text" placeholder="Email Address">
+                        <button type="submit"><i class="fa-solid fa-chevron-right"></i></button>
+                    </form>
+                    <h4><i class="fa-solid fa-headset"></i><a href="tel++17602781253">+17602781253</a></h4>
+                    <h4><i class="fa-solid fa-envelope"></i><a href="mailto:Foody@gmail.com">Foody@gmail.com</a></h4>
+                </div>
+                <div class="copy d-flex align-items-center justify-content-center">
+                    <p>
+                        Copyright © 2023 All rights reserved | This template is made with
+                        <i class="fa-light fa-heart"></i> by OurTeam
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- *********** Javascript *********** -->
+    <!-- libraries -->
+    <!-- [jQuery v3.6.4 - Bootstrap v5.3.0 - Swiper 8.4.5 - Aos ] -->
+    <script src="assets/js/main.js"></script>
+    <!-- custom scripts -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
