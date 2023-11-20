@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="424f661a-211f-40cc-b725-5d06fa8e4cbd" name="Changes" comment="" />
+    <list default="true" id="424f661a-211f-40cc-b725-5d06fa8e4cbd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/add-to-cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/categories/cat1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/products/pro2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/restaurants/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/assets/js.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/assets/js.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/inc/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/product-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-cart.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +30,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2Xue3HXr5JUiqBn7pJkRhJLv2kY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/opt/lampp/htdocs/resturant",
+    "last_opened_file_path": "/opt/lampp/htdocs/resturants/uploads/products",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -37,6 +57,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/uploads/products" />
+      <recent name="$PROJECT_DIR$/uploads/categories" />
+      <recent name="$PROJECT_DIR$/uploads/restaurants" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -49,6 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1699483190458</updated>
       <workItem from="1699483191496" duration="3451000" />
+      <workItem from="1700087923402" duration="1528000" />
+      <workItem from="1700348922057" duration="11850000" />
     </task>
     <servers />
   </component>

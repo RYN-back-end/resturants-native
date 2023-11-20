@@ -592,8 +592,8 @@ main .resturant-section .category_card p {
   color: #222;
   line-height: 20px;
 }
-main .resturant-section .category_card.active .icon {
-  border-color: #dedede;
+main .resturant-section .category_card.active{
+  background-color: #dedede;
 }
 main .shopppingCart {
   padding: 60px 16px;

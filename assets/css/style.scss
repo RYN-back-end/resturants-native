@@ -8,21 +8,26 @@
   font-family: 'Poppins', sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
+
 body {
   overflow-x: hidden;
   position: relative;
 }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 p {
   margin: 0;
 }
+
 $main: #000;
 $second: #f42f2c;
 $white: #fff;
@@ -34,22 +39,26 @@ $transition: all .3s ease-in-out;
   align-items: center;
   justify-content: center;
 }
+
 @mixin space-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 @mixin centerAbsolute {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 @mixin clearInput {
   border: none;
   background: none;
   outline: none;
 }
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -60,25 +69,31 @@ $transition: all .3s ease-in-out;
     transform: translateZ(0);
   }
 }
+
 ::-webkit-scrollbar {
   width: 4px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: #fff;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #999999;
   height: 300px;
 }
+
 :target {
   scroll-margin-top: 80px;
 }
+
 .title {
   color: $second;
   font-size: 22px;
   text-align: center;
   padding: 16px 0;
 }
+
 header {
   width: 100%;
   padding: 16px 0;
@@ -88,16 +103,20 @@ header {
   left: 0;
   z-index: 99999;
   background: $white;
+
   &.sticky {
     position: fixed;
     box-shadow: $shadow;
     animation: .5s ease-in-out 0s normal none 1 running fadeInDown;
   }
+
   nav {
     @include space-between();
+
     .logo {
       height: 46px;
       flex: 2;
+
       a {
         color: $main;
         height: 46px;
@@ -107,6 +126,7 @@ header {
         position: relative;
         align-items: center;
         letter-spacing: 1px;
+
         &::after {
           content: '';
           position: absolute;
@@ -120,20 +140,24 @@ header {
         }
       }
     }
+
     .nav-links {
       flex: 3;
       display: flex;
       justify-content: center;
       height: 46px;
+
       li {
         flex: 1;
         @include centerFlex();
+
         .nav-link {
           color: $main;
           font-size: 14px;
           font-weight: 600;
           position: relative;
           transition: $transition;
+
           &::after {
             position: absolute;
             content: "";
@@ -145,14 +169,18 @@ header {
             transform: translateX(-50%);
             transition: $transition;
           }
+
           &:hover {
             color: $second;
+
             &::after {
               width: 100%;
             }
           }
+
           &.active {
             color: $second;
+
             &::after {
               width: 100%;
             }
@@ -160,22 +188,27 @@ header {
         }
       }
     }
+
     .btns {
       flex: 2;
       display: flex;
       align-items: center;
       justify-content: flex-end;
       height: 46px;
+
       .btn {
         outline: none;
         border: 0;
         font-size: 16px;
+
         i {
           color: $second;
         }
+
         a {
           color: $main;
         }
+
         &:last-child {
           display: none;
         }
@@ -183,14 +216,17 @@ header {
     }
   }
 }
+
 main {
   .hero-section {
     width: 100%;
     margin-top: 80px;
     height: calc(100vh - 80px);
+
     .swiper {
       width: 100%;
       height: 100%;
+
       .swiper-slide {
         position: relative;
         background-size: cover;
@@ -201,6 +237,7 @@ main {
         height: 100%;
         min-height: 500px;
         isolation: isolate;
+
         &::after {
           content: "";
           width: 100%;
@@ -212,6 +249,7 @@ main {
           z-index: -1;
           transition: 0.3s ease-in-out;
         }
+
         .slide-content {
           width: min(100% - 32px, 650px);
           margin: 0 auto;
@@ -220,22 +258,26 @@ main {
           justify-content: center;
           flex-direction: column;
           gap: 16px;
+
           h2 {
             font-size: 32px;
             font-weight: 700;
             color: $white;
           }
+
           p {
             text-align: center;
             font-size: 14px;
             color: $white;
             line-height: 24px;
           }
+
           a {
             color: $white;
           }
         }
       }
+
       .heroSwiper-pagination {
         position: absolute;
         z-index: 99;
@@ -243,6 +285,7 @@ main {
         align-items: center;
         justify-content: center;
         bottom: 16px;
+
         .swiper-pagination-bullet {
           border-radius: 0;
           height: 4px;
@@ -252,8 +295,10 @@ main {
       }
     }
   }
+
   .restaurants-section {
     padding: 60px 16px;
+
     .restaurant {
       display: flex;
       flex-direction: column;
@@ -262,29 +307,36 @@ main {
       background: $white;
       border-radius: 8px;
       box-shadow: $shadow;
+
       img {
         width: 100%;
         aspect-ratio: 3 / 2;
       }
+
       .info {
         h4 {
           font-size: 22px;
         }
+
         p {
           i {
             color: $second;
             font-size: 16px;
             margin-right: 4px;
           }
+
           a {
             color: $main;
           }
+
           font-size: 14px;
           color: $main;
         }
+
         a {
           color: $main;
           transition: $transition;
+
           &:hover {
             color: $second;
           }
@@ -292,38 +344,47 @@ main {
       }
     }
   }
+
   .section_header {
     height: 250px;
     background: #fafafa;
     padding-top: 80px;
+
     .container {
       height: 100%;
+
       .navigation {
         height: 100%;
         display: flex;
         align-items: center;
+
         h2 {
           font-size: 36px;
           color: $main;
           line-height: 54px;
           font-weight: 600;
+
           a {
             font-size: 16px;
             color: #777777;
           }
         }
       }
+
       .thumb_img {
         height: 100%;
         @include centerFlex();
+
         img {
           height: 170px;
         }
       }
     }
   }
+
   .about_section {
     padding: 60px 16px;
+
     .feature_card {
       border-radius: 30px;
       box-shadow: $shadow;
@@ -331,15 +392,18 @@ main {
       @include centerFlex();
       flex-direction: column;
       gap: 12px;
+
       img {
         height: 42px;
       }
+
       h4 {
         margin: 0;
         font-size: 20px;
         font-weight: 600;
         color: $main;
       }
+
       p {
         font-size: 14px;
         line-height: 24px;
@@ -347,6 +411,7 @@ main {
         text-align: center;
       }
     }
+
     .fearures_text {
       width: 90%;
       height: 100%;
@@ -354,21 +419,25 @@ main {
       justify-content: center;
       flex-direction: column;
       gap: 16px;
+
       .hint {
         font-size: 16px;
         color: $second;
         font-weight: 600;
       }
+
       h3 {
         color: #000;
         font-weight: 600;
         font-size: 42px;
       }
+
       .about {
         color: #181818;
         line-height: 26px;
         font-size: 14px;
       }
+
       a {
         padding: 8px 12px;
         width: 160px;
@@ -380,23 +449,28 @@ main {
         outline: none;
         border: none;
         transition: $transition;
+
         &:hover {
           background: $second;
         }
       }
     }
   }
+
   .testimonials {
     background-color: #fafafa;
     padding: 60px 16px;
+
     .image {
       width: 100%;
       @include centerFlex();
+
       img {
         object-fit: contain;
         width: 100%;
       }
     }
+
     .testimonials_content {
       width: 90%;
       height: 100%;
@@ -404,36 +478,43 @@ main {
       justify-content: center;
       flex-direction: column;
       gap: 16px;
+
       .hint {
         font-size: 16px;
         color: $second;
         font-weight: 600;
       }
+
       h3 {
         color: #000;
         font-weight: 600;
         font-size: 42px;
       }
     }
+
     .testimonialsSwiper {
       width: 100%;
       display: flex;
+
       .testi_content {
         display: flex;
         flex-direction: column;
         gap: 22px;
+
         p {
           font-size: 14px;
           color: $main;
           font-style: italic;
           line-height: 26px;
         }
+
         h5 {
           color: $main;
           font-weight: 600;
           font-size: 22px;
         }
       }
+
       .swiper-button-next,
       .swiper-button-prev {
         top: initial;
@@ -443,6 +524,7 @@ main {
         border-radius: 50%;
         background-color: $second;
         @include centerFlex();
+
         &::after {
           font-family: "Font Awesome 6 pro";
           content: "\f054";
@@ -450,84 +532,102 @@ main {
           color: $white;
         }
       }
+
       .swiper-button-prev {
         top: initial;
         left: initial;
         right: 80px;
         bottom: 0;
+
         &::after {
           content: "\f053";
         }
       }
     }
   }
+
   .related_products {
     padding: 60px 16px;
+
     h2 {
       font-size: 24px;
       color: $main;
       font-weight: 600;
     }
   }
+
   .product-details-section {
     padding: 60px 16px;
+
     .image {
       width: 100%;
       border-radius: 24px;
       overflow: hidden;
       box-shadow: $shadow;
+
       img {
         width: 100%;
         object-fit: contain;
       }
     }
+
     .pro_overview {
       padding: 0 22px;
       display: flex;
       flex-direction: column;
       gap: 16px;
+
       h3 {
         font-size: 32px;
         color: $main;
         font-weight: 600;
       }
+
       h4 {
         font-weight: 600;
         font-size: 24px;
         color: $second;
         margin: 0;
       }
+
       p {
         font-size: 14px;
         color: #777777;
         line-height: 24px;
       }
+
       .category {
         font-size: 18px;
         line-height: 32px;
         color: #777777;
+
         span {
           color: $main;
           font-weight: 600;
         }
       }
+
       h6 {
         color: $second;
         font-size: 18px;
         font-weight: 600;
       }
+
       ul {
         list-style: disc;
         padding-left: 16px;
+
         li {
           color: $main;
           font-size: 14px;
           line-height: 28px;
         }
       }
+
       .add_cart {
         height: 100%;
         width: 100%;
+
         button {
           padding: 8px 12px;
           width: 100%;
@@ -538,6 +638,7 @@ main {
           outline: none;
           border: none;
           transition: $transition;
+
           &:hover {
             background: $second;
           }
@@ -545,18 +646,22 @@ main {
       }
     }
   }
+
   .resturant-section {
     padding: 60px 16px;
+
     .swiper {
       display: flex;
       padding: 16px;
     }
+
     .category_card {
       padding: 24px;
       @include centerFlex();
       flex-direction: column;
       box-shadow: $shadow;
       border-radius: 24px;
+
       .icon {
         width: 100px;
         height: 100px;
@@ -565,48 +670,58 @@ main {
         @include centerFlex();
         background: #f42f2c9b;
         border-radius: 50%;
+
         img {
           object-fit: contain;
           width: 54%;
         }
+
         border: 4px solid transparent;
       }
+
       h5 {
         margin: 0;
         margin-top: 16px;
         font-size: 22px;
+
         a {
           color: $main;
           transition: $transition;
+
           &:hover {
             color: $second;
           }
         }
       }
+
       p {
         font-size: 14px;
         color: $dark;
         line-height: 20px;
       }
+
       &.active {
-        .icon {
-          border-color: #dedede;
-        }
+        border-color: #dedede;
       }
     }
   }
+
   .shopppingCart {
     padding: 60px 16px;
+
     .fillCart {
       color: $main;
       text-align: center;
+
       a {
         color: $second;
       }
     }
+
     .items_list {
       display: flex;
       flex-direction: column;
+
       .list_header {
         height: 80px;
         @include centerFlex();
@@ -614,71 +729,86 @@ main {
         border-radius: 12px 12px 0 0;
         padding: 0 16px;
         box-shadow: $shadow;
+
         .row {
           width: 100%;
         }
+
         span {
           color: $white;
           font-size: 16px;
           font-weight: 600;
         }
       }
+
       .order {
         padding: 16px 0;
         border-bottom: 1px solid #eee;
+
         .product_info {
           width: 100%;
           display: flex;
           align-items: center;
           gap: 12px;
+
           img {
             height: 120px;
           }
+
           p {
             font-size: 18px;
             color: $main;
             font-weight: 600;
           }
         }
+
         .center_div {
           width: 100%;
           height: 100%;
           display: flex;
           align-items: center;
+
           span {
             font-size: 20px;
             color: $main;
             font-weight: 600;
           }
         }
+
         .action {
           width: 100%;
           @include clearInput();
           height: 100%;
           display: flex;
           align-items: center;
+
           i {
             color: $second;
             font-size: 20px;
           }
         }
       }
+
       .list_total_procced {
         width: 100%;
         padding: 32px 0;
+
         .subtotal {
           width: 100%;
           height: 100%;
           @include space-between();
+
           span {
             font-size: 18px;
             color: $main;
           }
+
           b {
             font-size: 22px;
             color: $main;
           }
         }
+
         .place_order {
           background: $main;
           flex: 1;
@@ -686,15 +816,19 @@ main {
           height: 56px;
           transition: $transition;
           border-radius: 4px;
+
           a {
             color: $white;
           }
+
           &:hover {
             background: $second;
           }
         }
+
         .address_field {
           flex: 2;
+
           input {
             @include clearInput();
             height: 56px;
@@ -709,12 +843,15 @@ main {
       }
     }
   }
+
   .myAccount {
     padding: 60px 16px;
+
     .nav {
       border: 1px solid #eee;
       border-radius: 8px;
       overflow: hidden;
+
       button {
         width: 100%;
         padding: 16px 24px;
@@ -725,18 +862,22 @@ main {
         color: $main;
         border-radius: 0;
         font-weight: 500;
+
         i {
           font-size: 18px;
         }
+
         &:hover,
         &.active {
           background-color: #fafafa;
           color: $main;
+
           i {
             color: $second;
           }
         }
       }
+
       a {
         width: 100%;
         padding: 16px 24px;
@@ -746,26 +887,32 @@ main {
         gap: 8px;
         color: $main;
         font-weight: 500;
+
         i {
           font-size: 18px;
         }
+
         &:hover {
           background-color: #fafafa;
           color: $main;
+
           i {
             color: $second;
           }
         }
       }
     }
+
     .tab-content {
       .greating {
         font-size: 18px;
         color: $main;
+
         .user_name {
           color: $second;
         }
       }
+
       form {
         gap: 16px;
         width: 100%;
@@ -773,14 +920,17 @@ main {
         margin-top: 48px;
         @include centerFlex();
         flex-direction: column;
+
         .form-group {
           width: 100%;
           display: flex;
           gap: 16px;
+
           .input-field {
             flex: 1;
           }
         }
+
         .input-field {
           display: flex;
           flex-direction: column;
@@ -788,15 +938,18 @@ main {
           gap: 8px;
           width: 100%;
           color: $main;
+
           label {
             font-size: 14px;
             cursor: pointer;
+
             i {
               color: $second;
               font-size: 16px;
               padding: 0 4px;
             }
           }
+
           input,
           .form-select {
             @include clearInput();
@@ -807,9 +960,11 @@ main {
             border-radius: 4px;
             box-shadow: none !important;
           }
+
           .form-select {
             cursor: pointer;
           }
+
           span {
             position: absolute;
             top: 56%;
@@ -817,6 +972,7 @@ main {
             right: 16px;
           }
         }
+
         button {
           width: 30%;
           margin-top: 24px;
@@ -827,20 +983,24 @@ main {
           background: $main;
           color: $white;
           transition: $transition;
+
           &:hover {
             background: $second;
           }
         }
       }
+
       .oreders-wrapper {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 16px;
+
         .order {
           width: 100%;
           border-radius: 8px;
           border: 1px solid #eee;
+
           .order-header,
           .order-footer {
             width: 100%;
@@ -848,27 +1008,33 @@ main {
             padding: 16px;
             flex-wrap: wrap;
             border-bottom: 1px solid #eee;
+
             h4 {
               width: 50%;
               font-size: 14px;
               margin: 0;
               padding: 4px 0;
               color: $main;
+
               b {
                 color: #676767;
                 font-size: 16px;
               }
+
               span {
                 font-size: 16px;
+
                 &.wait {
                   color: #ffc205;
                 }
+
                 &.deliverd {
                   color: #4db748;
                 }
               }
             }
           }
+
           .order-footer {
             border-top: 1px solid #eee;
             border-bottom: 0;
@@ -877,43 +1043,53 @@ main {
       }
     }
   }
+
   .login-section {
     padding: 100px 16px;
+
     .form-wrapper {
       width: 100%;
       box-shadow: $shadow;
       padding: 32px;
       border-radius: 16px;
+
       .img {
         width: 100%;
         height: 100%;
         @include centerFlex();
+
         img {
           width: 100%;
         }
       }
+
       form {
         width: 100%;
         @include centerFlex();
         height: 100%;
         gap: 16px;
         flex-direction: column;
+
         h2 {
           color: $main;
           font-size: 48px;
         }
+
         h5 {
           color: #777777;
           font-size: 14px;
         }
+
         .form-group {
           width: 100%;
           display: flex;
           gap: 16px;
+
           .input-field {
             flex: 1;
           }
         }
+
         .input-field {
           display: flex;
           flex-direction: column;
@@ -921,15 +1097,18 @@ main {
           gap: 8px;
           width: 100%;
           color: $main;
+
           label {
             font-size: 14px;
             cursor: pointer;
+
             i {
               color: $second;
               font-size: 16px;
               padding: 0 4px;
             }
           }
+
           input,
           .form-select {
             @include clearInput();
@@ -940,6 +1119,7 @@ main {
             border-radius: 4px;
             box-shadow: none !important;
           }
+
           textarea {
             @include clearInput();
             height: 112px;
@@ -948,9 +1128,11 @@ main {
             background: #fafafa;
             border-radius: 4px;
           }
+
           .form-select {
             cursor: pointer;
           }
+
           span {
             position: absolute;
             top: 56%;
@@ -958,6 +1140,7 @@ main {
             right: 16px;
           }
         }
+
         button {
           width: 100%;
           margin-top: 24px;
@@ -967,25 +1150,30 @@ main {
           background: $main;
           color: $white;
           transition: $transition;
+
           &.contact-submit {
             width: 35%;
             margin-top: 8px;
             align-self: flex-end;
           }
+
           &:hover {
             background: $second;
           }
         }
+
         p {
           align-self: flex-start;
           color: $main;
           margin-top: 8px;
           font-size: 14px;
+
           a {
             color: $second;
           }
         }
       }
+
       .contact-info {
         display: flex;
         justify-content: center;
@@ -993,66 +1181,80 @@ main {
         height: 100%;
         padding: 0 8px;
         flex-direction: column;
+
         h3 {
           font-size: 32px;
           color: $main;
           font-weight: 600;
         }
+
         p {
           font-size: 14px;
           color: #777777;
           line-height: 24px;
         }
+
         ul {
           display: flex;
           flex-direction: column;
           gap: 12px;
           margin-top: 32px;
+
           li {
             display: flex;
             align-items: center;
             gap: 12px;
+
             .icon {
               width: 45px;
               height: 45px;
               border-radius: 50%;
               border: 1px solid $second;
               @include centerFlex();
+
               i {
                 font-size: 18px;
                 color: $second;
               }
             }
+
             a {
               color: $main;
               transition: $transition;
+
               &:hover {
                 color: $second;
               }
             }
+
             p {
               font-size: 16px;
               color: $main;
             }
           }
         }
+
         .follow {
           display: flex;
           align-items: center;
           gap: 32px;
           margin-top: 32px;
+
           h5 {
             font-size: 24px;
             color: $main;
             margin: 0;
           }
+
           .social {
             display: flex;
             gap: 24px;
+
             a {
               color: $main;
               transition: $transition;
               font-size: 18px;
+
               &:hover {
                 color: $second;
               }
@@ -1063,6 +1265,7 @@ main {
     }
   }
 }
+
 .product-card {
   box-shadow: $shadow;
   height: 100%;
@@ -1072,6 +1275,7 @@ main {
   flex-direction: column;
   border-radius: 8px;
   position: relative;
+
   span {
     position: absolute;
     top: 0;
@@ -1083,6 +1287,7 @@ main {
     background: $second;
     color: $white;
     transition: $transition;
+
     button {
       @include clearInput();
       color: $white;
@@ -1090,45 +1295,55 @@ main {
       width: 100%;
       height: 100%;
     }
+
     &:hover {
       background: $main;
     }
   }
+
   .pro_img {
     width: 100%;
     @include centerFlex();
+
     img {
       height: 160px;
     }
   }
+
   .pro_info {
     @include space-between();
+
     a {
       font-size: 20px;
       color: $main;
       font-weight: 600;
     }
+
     h4 {
       font-size: 20px;
       font-weight: 600;
       color: $second;
     }
   }
+
   .pro_description {
     p {
       font-size: 14px;
       color: $dark;
       line-height: 22px;
     }
+
     h6 {
       font-size: 14px;
       color: $second;
       font-weight: 600;
       margin-top: 12px;
     }
+
     ul {
       display: flex;
       flex-wrap: wrap;
+
       li {
         padding-right: 12px;
         line-height: 24px;
@@ -1139,36 +1354,44 @@ main {
     }
   }
 }
+
 .quantity {
   display: flex;
   align-items: center;
   width: 100%;
   height: 100%;
+
   button {
     width: 32px;
     @include clearInput();
     border: 1px solid $main;
+
     i {
       color: $main;
     }
   }
+
   input {
     text-align: center;
     @include clearInput();
     border-top: 1px solid $main;
     border-bottom: 1px solid $main;
     width: 64px;
+
     &::-webkit-inner-spin-button {
       display: none;
     }
   }
 }
+
 footer {
   width: 100%;
   padding: 80px 16px 0;
   background: $dark;
+
   .logo {
     margin-bottom: 16px;
+
     a {
       position: relative;
       color: $white;
@@ -1176,6 +1399,7 @@ footer {
       font-weight: 600;
       letter-spacing: 1px;
       font-family: "Poppins", sans-serif;
+
       span {
         position: absolute;
         right: -5px;
@@ -1188,16 +1412,19 @@ footer {
       }
     }
   }
+
   p {
     font-size: 14px;
     color: $white;
     font-weight: 400;
     line-height: 22px;
   }
+
   .social {
     display: flex;
     gap: 12px;
     margin-top: 24px;
+
     a {
       background-color: #111111;
       min-width: 42px;
@@ -1206,42 +1433,51 @@ footer {
       @include centerFlex();
       font-size: 16px;
       transition: $transition;
+
       &:hover {
         background-color: $second;
       }
     }
   }
+
   h3 {
     font-size: 20px;
     color: $white;
   }
+
   ul {
     margin-top: 24px;
+
     li {
       padding-top: 5px;
     }
+
     a {
       color: $white;
       font-weight: 500;
       transition: $transition;
       font-size: 14px;
+
       &:hover {
         color: $second;
       }
     }
   }
+
   form {
     margin-top: 40px;
     margin-bottom: 30px;
     width: 220px;
     display: flex;
     gap: 0;
+
     input {
       @include clearInput();
       background-color: $white;
       padding: 10px 15px;
       border-radius: 4px 0 0 4px;
     }
+
     button {
       @include clearInput();
       background-color: $second;
@@ -1251,18 +1487,22 @@ footer {
       border-radius: 0 4px 4px 0;
     }
   }
+
   h4 {
     margin-top: 10px;
     font-size: 16px;
+
     a {
       color: $white;
     }
+
     i {
       color: $second;
       font-size: 20px;
       margin-right: 15px;
     }
   }
+
   .copy {
     border-top: 1px solid #999999;
     margin-top: 40px;

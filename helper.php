@@ -12,6 +12,17 @@ if (!function_exists('runQuery')) {
         return $conn->query($query);
     }
 }
+if (!function_exists('runOneQuery')) {
+    function runOneQuery($query)
+    {
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $database = "resturants";
+        $conn = new mysqli($servername, $username, $password, $database);
+        return $conn->query($query)->fetch_assoc();
+    }
+}
 
 if (!function_exists('checkLogin')) {
     function checkLogin()

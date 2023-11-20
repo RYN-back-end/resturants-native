@@ -3,6 +3,21 @@ require(__DIR__ . '/../../helper.php');
 if (!isset($_SESSION)) {
     session_start();
 }
+$customer_id = $_SESSION['user']['Customer_id'] ?? '';
+
+$selectAllCartSql = "SELECT
+    cart.customer_id,
+    SUM(cart.qty * menu_item.item_price) AS total_price
+FROM
+    cart
+JOIN
+    menu_item ON cart.item_id = menu_item.item_id
+WHERE
+    cart.customer_id = {$customer_id}
+GROUP BY
+    cart.customer_id;";
+$selectAllCartResult = runOneQuery($selectAllCartSql);
+
 ?>
 <header>
     <nav class="container">
@@ -44,7 +59,7 @@ if (!isset($_SESSION)) {
                 <div class="btn">
                     <a href="shopping-cart.html">
                         <i class="fa-light fa-bag-shopping"></i>
-                        <span> $00.00</span>
+                        <span> <?php echo $selectAllCartResult['total_price'] ?> $</span>
                     </a>
                 </div>
                 <?php
