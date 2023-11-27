@@ -1,4 +1,5 @@
 <?php
+
 require 'helper.php';
 $selectAllRestaurantsSql = "SELECT * FROM restaurants ORDER BY restaurant_id DESC LIMIT 6;";
 $selectAllRestaurantsResult = runQuery($selectAllRestaurantsSql);

@@ -5,22 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="424f661a-211f-40cc-b725-5d06fa8e4cbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/add-to-cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/categories/cat1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/products/pro2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/restaurants/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delete-cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/place-order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/account/orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add-to-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/add-to-cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contct-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/contct-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/assets/js.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/assets/js.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/product-details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurants.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-cart.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/opt/lampp/htdocs/resturants/uploads/products",
+    "last_opened_file_path": "/opt/lampp/htdocs/resturants",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,6 +74,7 @@
       <workItem from="1699483191496" duration="3451000" />
       <workItem from="1700087923402" duration="1528000" />
       <workItem from="1700348922057" duration="11850000" />
+      <workItem from="1701114623360" duration="7887000" />
     </task>
     <servers />
   </component>

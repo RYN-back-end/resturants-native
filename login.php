@@ -22,7 +22,6 @@ if (isset($_POST['Customer_username']) && isset($_POST['Customer_password'])) {
         header('Location: login.php?error=The user name not found not found');
     }
     die();
-
 }
 ?>
 <!DOCTYPE html>
@@ -38,7 +37,8 @@ if (isset($_POST['Customer_username']) && isset($_POST['Customer_password'])) {
 <body>
 <!-- header -->
 <?php
-require_once 'layout/inc/header.php'
+require_once 'layout/inc/header.php';
+
 ?>
 <!-- main wrapper -->
 <main>

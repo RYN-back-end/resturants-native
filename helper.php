@@ -1,6 +1,13 @@
 <?php
 
 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "resturants";
+$conn = new mysqli($servername, $username, $password, $database);
+
+
 if (!function_exists('runQuery')) {
     function runQuery($query)
     {
@@ -9,6 +16,8 @@ if (!function_exists('runQuery')) {
         $password = "";
         $database = "resturants";
         $conn = new mysqli($servername, $username, $password, $database);
+        $conn->set_charset("utf8");
+
         return $conn->query($query);
     }
 }
@@ -29,21 +38,19 @@ if (!function_exists('checkLogin')) {
     {
         session_start();
         if (!isset($_SESSION['user']['loggedin'])) {
-            if (!str_contains($_SERVER['REQUEST_URI'],'login.php') &&
-                !str_contains($_SERVER['REQUEST_URI'],'registration.php')){
+            if (!str_contains($_SERVER['REQUEST_URI'], 'login.php') &&
+                !str_contains($_SERVER['REQUEST_URI'], 'registration.php')) {
                 header('Location: login.php');
             }
-        }elseif(str_contains($_SERVER['REQUEST_URI'],'login.php') ||
-            str_contains($_SERVER['REQUEST_URI'],'registration.php')){
+        } elseif (str_contains($_SERVER['REQUEST_URI'], 'login.php') ||
+            str_contains($_SERVER['REQUEST_URI'], 'registration.php')) {
             header('Location: index.php');
         }
 
-        if (isset($_SESSION['user']['loggedin']))
-        {
+        if (isset($_SESSION['user']['loggedin'])) {
             $checkMyUserSql = "SELECT * FROM customers WHERE Customer_id = '{$_SESSION['user']['Customer_id']}'";
             $checkMyUserResult = runQuery($checkMyUserSql);
-            if ($checkMyUserResult->num_rows <= 0 && $_SESSION['user']['loggedin'] == true)
-            {
+            if ($checkMyUserResult->num_rows <= 0 && $_SESSION['user']['loggedin'] == true) {
                 $_SESSION['user'] = [];
                 header('Location: login.php');
             }
@@ -55,21 +62,19 @@ if (!function_exists('checkAdminLogin')) {
     {
         session_start();
         if (!isset($_SESSION['admin']['loggedin'])) {
-            if (!str_contains($_SERVER['REQUEST_URI'],'admin/login.php')){
+            if (!str_contains($_SERVER['REQUEST_URI'], 'admin/login.php')) {
                 header('Location: login.php');
             }
 //            die('39');
-        }elseif(str_contains($_SERVER['REQUEST_URI'],'admin/login.php')){
+        } elseif (str_contains($_SERVER['REQUEST_URI'], 'admin/login.php')) {
             header('Location: index.php');
         }
 //        die('44');
 
-        if (isset($_SESSION['admin']['loggedin']))
-        {
+        if (isset($_SESSION['admin']['loggedin'])) {
             $checkMyUserSql = "SELECT * FROM admins WHERE id = '{$_SESSION['admin']['id']}'";
             $checkMyUserResult = runQuery($checkMyUserSql);
-            if ($checkMyUserResult->num_rows <= 0 && $_SESSION['admin']['loggedin'] == true)
-            {
+            if ($checkMyUserResult->num_rows <= 0 && $_SESSION['admin']['loggedin'] == true) {
                 $_SESSION['admin'] = [];
                 header('Location: login.php');
             }
@@ -81,21 +86,19 @@ if (!function_exists('checkCompanyLogin')) {
     {
         session_start();
         if (!isset($_SESSION['company']['loggedin'])) {
-            if (!str_contains($_SERVER['REQUEST_URI'],'company/login.php')){
+            if (!str_contains($_SERVER['REQUEST_URI'], 'company/login.php')) {
                 header('Location: login.php');
             }
 //            die('39');
-        }elseif(str_contains($_SERVER['REQUEST_URI'],'company/login.php')){
+        } elseif (str_contains($_SERVER['REQUEST_URI'], 'company/login.php')) {
             header('Location: index.php');
         }
 //        die('44');
 
-        if (isset($_SESSION['company']['loggedin']))
-        {
+        if (isset($_SESSION['company']['loggedin'])) {
             $checkMyUserSql = "SELECT * FROM companies WHERE id = '{$_SESSION['company']['id']}'";
             $checkMyUserResult = runQuery($checkMyUserSql);
-            if ($checkMyUserResult->num_rows <= 0 && $_SESSION['company']['loggedin'] == true)
-            {
+            if ($checkMyUserResult->num_rows <= 0 && $_SESSION['company']['loggedin'] == true) {
                 $_SESSION['company'] = [];
                 header('Location: login.php');
             }

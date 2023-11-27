@@ -37,17 +37,34 @@
     $(document).on('click', '.cartButton', function () {
         var id = $(this).data('id');
         var type = $(this).data('type');
+        var cart_id = $(this).data('cart');
         var input = $(`#cartInput${id}`)
         var oldQty = input.val();
-        if (type == 'plus') {
-            input.val(parseInt(parseInt(oldQty) + 1))
-        } else {
-            if (oldQty <= 1) {
-                input.val(1)
-                return true;
+        var currentUrl = window.location.href;
+        if (currentUrl.includes('shopping-cart.php')) {
+            var newQty = 0;
+            if (type == 'plus') {
+                newQty = (parseInt(parseInt(oldQty) + 1))
+            } else {
+                if (oldQty <= 1) {
+                    newQty = (1)
+                    return true;
+                }
+                newQty = (parseInt(parseInt(oldQty) - 1))
             }
-            input.val(parseInt(parseInt(oldQty) - 1))
+            window.location.href = `add-to-cart.php?id=${id}&qty=${newQty}&cart_id=${cart_id}`;
+        } else {
+            if (type == 'plus') {
+                input.val(parseInt(parseInt(oldQty) + 1))
+            } else {
+                if (oldQty <= 1) {
+                    input.val(1)
+                    return true;
+                }
+                input.val(parseInt(parseInt(oldQty) - 1))
+            }
         }
+
     })
 
 </script>

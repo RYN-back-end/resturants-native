@@ -3,7 +3,7 @@ require(__DIR__ . '/../../helper.php');
 if (!isset($_SESSION)) {
     session_start();
 }
-$customer_id = $_SESSION['user']['Customer_id'] ?? '';
+$customer_id = $_SESSION['user']['Customer_id'] ?? 0;
 
 $selectAllCartSql = "SELECT
     cart.customer_id,
@@ -16,6 +16,7 @@ WHERE
     cart.customer_id = {$customer_id}
 GROUP BY
     cart.customer_id;";
+
 $selectAllCartResult = runOneQuery($selectAllCartSql);
 
 ?>
@@ -57,9 +58,9 @@ $selectAllCartResult = runOneQuery($selectAllCartSql);
                     </a>
                 </div>
                 <div class="btn">
-                    <a href="shopping-cart.html">
+                    <a href="shopping-cart.php">
                         <i class="fa-light fa-bag-shopping"></i>
-                        <span> <?php echo $selectAllCartResult['total_price'] ?> $</span>
+                        <span> <?php echo $selectAllCartResult['total_price']??'0.00' ?> $</span>
                     </a>
                 </div>
                 <?php
