@@ -86,7 +86,7 @@ require_once 'layout/inc/header.php'
                             <i class="fa-light fa-bag-shopping"></i> My orders
                         </button>
                         <!-- log out btn -->
-                        <a href="#!"><i class="fa-regular fa-arrow-right-from-bracket"></i> Log out</a>
+                        <a href="logout.php"><i class="fa-regular fa-arrow-right-from-bracket"></i> Log out</a>
                     </div>
                 </aside>
                 <!-- account info -->
