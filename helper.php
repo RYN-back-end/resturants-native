@@ -81,6 +81,54 @@ if (!function_exists('checkAdminLogin')) {
         }
     }
 }
+if (!function_exists('checkDriverLogin')) {
+    function checkDriverLogin()
+    {
+        session_start();
+        if (!isset($_SESSION['driver']['loggedin'])) {
+            if (!str_contains($_SERVER['REQUEST_URI'], 'driver/login.php')) {
+                header('Location: login.php');
+            }
+//            die('39');
+        } elseif (str_contains($_SERVER['REQUEST_URI'], 'driver/login.php')) {
+            header('Location: index.php');
+        }
+//        die('44');
+
+        if (isset($_SESSION['driver']['loggedin'])) {
+            $checkMyUserSql = "SELECT * FROM delivery WHERE delivery_id = '{$_SESSION['driver']['delivery_id']}'";
+            $checkMyUserResult = runQuery($checkMyUserSql);
+            if ($checkMyUserResult->num_rows <= 0 && $_SESSION['driver']['loggedin'] == true) {
+                $_SESSION['driver'] = [];
+                header('Location: login.php');
+            }
+        }
+    }
+}
+if (!function_exists('checkRestaurantLogin')) {
+    function checkRestaurantLogin()
+    {
+        session_start();
+        if (!isset($_SESSION['restaurant']['loggedin'])) {
+            if (!str_contains($_SERVER['REQUEST_URI'], 'restaurant/login.php')) {
+                header('Location: login.php');
+            }
+//            die('39');
+        } elseif (str_contains($_SERVER['REQUEST_URI'], 'restaurant/login.php')) {
+            header('Location: index.php');
+        }
+//        die('44');
+
+        if (isset($_SESSION['restaurant']['loggedin'])) {
+            $checkMyUserSql = "SELECT * FROM restaurants WHERE restaurant_id = '{$_SESSION['restaurant']['restaurant_id']}'";
+            $checkMyUserResult = runQuery($checkMyUserSql);
+            if ($checkMyUserResult->num_rows <= 0 && $_SESSION['restaurant']['loggedin'] == true) {
+                $_SESSION['restaurant'] = [];
+                header('Location: login.php');
+            }
+        }
+    }
+}
 if (!function_exists('checkCompanyLogin')) {
     function checkCompanyLogin()
     {
