@@ -11,6 +11,7 @@ if (isset($_POST['delivery_username']) && isset($_POST['delivery_password']))
            $_SESSION['driver']['delivery_id'] = $row['delivery_id'];
            $_SESSION['driver']['delivery_name'] = $row['delivery_name'];
            $_SESSION['driver']['delivery_username'] = $row['delivery_username'];
+           $_SESSION['driver']['city_id'] = $row['city_id'];
            $_SESSION['driver']['loggedin'] = true;
            header('Location: index.php');
        }else{

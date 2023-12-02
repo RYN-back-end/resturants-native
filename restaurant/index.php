@@ -3,9 +3,6 @@ include __DIR__ . '/../system/core.php';
 require('../helper.php');
 checkRestaurantLogin();
 
-$selectOrderSql = "SELECT * FROM `orders` WHERE `restaurant_id` = '{$_SESSION['restaurant']["restaurant_id"]}'";
-$selectOrderResult = runQuery($selectOrderSql);
-
 if (isset($_GET['order_id']) && isset($_GET['order_status']))
 {
     $updateSql = "UPDATE `orders` SET `order_status` = '{$_GET['order_status']}' WHERE `order_id`='{$_GET['order_id']}'";
@@ -62,10 +59,9 @@ if (isset($_GET['order_id']) && isset($_GET['order_status']))
 <div class="lds-hourglass"></div>
 
 <content>
-    <section class="statisticsSection">
-        <div class="row g-4">
-        </div>
-    </section>
+    <?php
+    include_once 'layout/inc/counter.php';
+    ?>
     <!--control -->
     <section class="tableSection">
         <div class="tableHead">
@@ -111,19 +107,21 @@ if (isset($_GET['order_id']) && isset($_GET['order_status']))
                     </th>
                     <th>
                         <a href="<?php
-                        if ($row['order_status'] == 'accepted') {
-                            echo "?order_id={$row['order_id']}&order_status=on_way";
-                        } elseif ($row['order_status'] == 'on_way') {
-                            echo "?order_id={$row['order_id']}&order_status=ended";
+                        if ($row['order_status'] == 'new') {
+                            echo "?order_id={$row['order_id']}&order_status=accepted";
                         }else{
                             echo "#!";
                         }
                         ?>" class="btn btn-primary">
                             <?php
-                            if ($row['order_status'] == 'accepted') {
-                                echo "Go for delivery";
+                            if ($row['order_status'] == 'new') {
+                                echo "Accept";
                             } elseif ($row['order_status'] == 'on_way') {
-                                echo "End";
+                                echo "On Way";
+                            }elseif ($row['order_status'] == 'delivery_accepted') {
+                                echo "delivery accepted";
+                            }elseif ($row['order_status'] == 'accepted') {
+                                echo "Accepted, Waiting For Delivery";
                             }else{
                                 echo "Ended";
                             }

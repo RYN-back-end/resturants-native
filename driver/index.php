@@ -3,12 +3,12 @@ include __DIR__ . '/../system/core.php';
 require('../helper.php');
 checkDriverLogin();
 
-$selectOrderSql = "SELECT * FROM `orders` WHERE `delivery_id` = '{$_SESSION['driver']["delivery_id"]}'";
+$selectOrderSql = "SELECT * FROM `orders` WHERE `delivery_id` = '{$_SESSION['driver']["delivery_id"]}' OR `order_status`='accepted' AND `city_id` = '{$_SESSION['driver']['city_id']}'";
 $selectOrderResult = runQuery($selectOrderSql);
 
 if (isset($_GET['order_id']) && isset($_GET['order_status']))
 {
-    $updateSql = "UPDATE `orders` SET `order_status` = '{$_GET['order_status']}' WHERE `order_id`='{$_GET['order_id']}'";
+    $updateSql = "UPDATE `orders` SET `order_status` = '{$_GET['order_status']}' ,`delivery_id`= '{$_SESSION['driver']["delivery_id"]}' WHERE `order_id`='{$_GET['order_id']}'";
     runQuery($updateSql);
     header('Location: index.php');
 }
@@ -112,6 +112,8 @@ if (isset($_GET['order_id']) && isset($_GET['order_status']))
                     <th>
                         <a href="<?php
                         if ($row['order_status'] == 'accepted') {
+                            echo "?order_id={$row['order_id']}&order_status=delivery_accepted";
+                        }elseif ($row['order_status'] == 'delivery_accepted') {
                             echo "?order_id={$row['order_id']}&order_status=on_way";
                         } elseif ($row['order_status'] == 'on_way') {
                             echo "?order_id={$row['order_id']}&order_status=ended";
@@ -121,6 +123,8 @@ if (isset($_GET['order_id']) && isset($_GET['order_status']))
                         ?>" class="btn btn-primary">
                             <?php
                             if ($row['order_status'] == 'accepted') {
+                                echo "Accept";
+                            }elseif ($row['order_status'] == 'delivery_accepted') {
                                 echo "Go for delivery";
                             } elseif ($row['order_status'] == 'on_way') {
                                 echo "End";

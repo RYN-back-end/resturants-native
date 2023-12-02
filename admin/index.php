@@ -55,7 +55,6 @@ if (isset($_POST['type']) && $_POST['type'] == 'new') {
         }
         if (move_uploaded_file($file_tmp, "../uploads/restaurants/" . $file_name)) {
             $imagePath = "uploads/restaurants/" . $file_name;
-            $updateSql .= ", `restaurant_image` = '{$imagePath}'";
         }
     }
     $password = password_hash($_POST['restaurant_password'], PASSWORD_DEFAULT);

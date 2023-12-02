@@ -24,7 +24,7 @@ if ($selectAllResult->num_rows > 0) {
 }
 
 $date = date('Y-m-d');
-$insertSql = "INSERT INTO `orders`(`order_date`, `address`, `order_total_price`, `customer_id`, `restaurant_id`) VALUES ('{$date}','{$address}','{$totalPrice}','{$customer_id}','{$restaurantId}')";
+$insertSql = "INSERT INTO `orders`(`order_date`, `address`, `order_total_price`, `customer_id`, `restaurant_id`,`city_id`) VALUES ('{$date}','{$address}','{$totalPrice}','{$customer_id}','{$restaurantId}','{$_SESSION['user']['city_id']}')";
 $queryResult = runQuery($insertSql);
 if ($queryResult === true)
 {

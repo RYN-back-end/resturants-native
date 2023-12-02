@@ -1,60 +1,44 @@
 <?php
-$sqlAllRestaurants = "SELECT COUNT(restaurant_id) AS countAllRestaurants FROM restaurants";
-$countAllRestaurantsResult = runQuery($sqlAllRestaurants);
-$countAllRestaurants = 0;
+$selectOrderSql = "SELECT * FROM `orders` WHERE `restaurant_id` = '{$_SESSION['restaurant']["restaurant_id"]}'";
+$selectOrderResult = runQuery($selectOrderSql);
 
-if ($countAllRestaurantsResult->num_rows > 0) {
-    $row = $countAllRestaurantsResult->fetch_assoc();
-    $countAllRestaurants = $row['countAllRestaurants'];
-}
+$selectCategoriesSql = "SELECT * FROM `menu_categories` WHERE `restaurant_id` = '{$_SESSION['restaurant']["restaurant_id"]}'";
+$selectCategoriesResult = runQuery($selectCategoriesSql);
 
-$sqlDriversAll = "SELECT COUNT(delivery_id) AS countAllDrivers FROM delivery";
-$countAllDriversResult = runQuery($sqlDriversAll);
-$countAllDrivers = 0;
-
-$sqlCitiesAll = "SELECT * FROM cities";
-$countAllCitiesResult = runQuery($sqlCitiesAll);
-$cities = [];
-while ($cityRow = $countAllCitiesResult->fetch_assoc()) {
-    $cities[] = $cityRow;
-}
+$selectItemsSql = "SELECT * FROM `menu_item` WHERE `restaurant_id` = '{$_SESSION['restaurant']["restaurant_id"]}'";
+$selectItemsResult = runQuery($selectItemsSql);
 
 
-if ($countAllDriversResult->num_rows > 0) {
 
-    $row = $countAllDriversResult->fetch_assoc();
-    $countAllDrivers = $row['countAllDrivers'];
-}
 ?>
 <section class="statisticsSection">
     <div class="row g-4">
         <a href="index.php" class="statistic col-sm-6 col-md-4 col-lg-3">
             <h5 class="top">
                 <i class="fa-light fa-hospital"></i>
-                Restaurants
+                Orders
             </h5>
             <div class="body">
                 <h1 class="odometer"
-                    data-count="<?php echo $countAllRestaurants; ?>"><?php echo $countAllRestaurants; ?></h1>
+                    data-count="<?php echo $selectOrderResult->num_rows; ?>"><?php echo $selectOrderResult->num_rows; ?></h1>
             </div>
         </a>
-        <a href="drivers.php" class="statistic col-sm-6 col-md-4 col-lg-3">
+        <a href="categories.php" class="statistic col-sm-6 col-md-4 col-lg-3">
+            <h5 class="top">
+                <i class="fa-light fa-dagger"></i>
+                Categories
+            </h5>
+            <div class="body">
+                <h1 class="odometer" data-count="<?php echo $selectCategoriesResult->num_rows ?? 0; ?>"><?php echo $selectCategoriesResult->num_rows?? 0; ?></h1>
+            </div>
+        </a>
+        <a href="products.php" class="statistic col-sm-6 col-md-4 col-lg-3">
             <h5 class="top">
                 <i class="fa-light fa-user-nurse"></i>
-                Drivers
+                Products
             </h5>
             <div class="body">
-                <h1 class="odometer" data-count="<?php echo $countAllDrivers ?? 0; ?>"><?php echo $countAllDrivers ?? 0; ?></h1>
-            </div>
-        </a>
-        <a href="cities.php" class="statistic col-sm-6 col-md-4 col-lg-3">
-            <h5 class="top">
-                <i class="fa-light fa-building"></i>
-                Cities
-            </h5>
-            <div class="body">
-                <h1 class="odometer"
-                    data-count="<?php echo $countAllCitiesResult->num_rows ?? 0; ?>"><?php echo $countAllCitiesResult->num_rows ?? 0; ?></h1>
+                <h1 class="odometer" data-count="<?php echo $selectItemsResult->num_rows ?? 0; ?>"><?php echo $selectItemsResult->num_rows ?? 0; ?></h1>
             </div>
         </a>
     </div>

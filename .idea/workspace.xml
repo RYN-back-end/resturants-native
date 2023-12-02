@@ -5,206 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="424f661a-211f-40cc-b725-5d06fa8e4cbd" name="Changes" comment="28-11">
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/aos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/app-rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/app-rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/app.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/app.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/bootstrap-rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/bootstrap-rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/custom-rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/custom.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/filepond.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/icons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/jquery.fancybox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/odometer.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/css/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/boxicons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/boxicons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/boxicons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/boxicons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/boxicons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-semibold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-semibold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/hkgrotesk-semibold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/la-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/materialdesignicons-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/materialdesignicons-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/montserrat-Arabic-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/remixicon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/remixicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/remixicon.symbol.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/remixicon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/remixicon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/remixicon.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/summernote.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/summernote.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/fonts/summernote.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/Custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/aos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/apexcharts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/filepond.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/jquery.appear.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/jquery.fancybox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/odometer.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/js/toastr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-duotone-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-duotone-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-light-300.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-light-300.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-thin-100.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-thin-100.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-v4compatibility.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/fa-v4compatibility.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/assets/dashboard/webfonts/montserrat-Arabic-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/cities.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/drivers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/layout/assets/css.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/layout/assets/js.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/layout/inc/counter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant/layout/assets/css.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant/layout/assets/js.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant/layout/inc/counter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/resturant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/resturant.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant/categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant/products.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/about-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/account/orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/account/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add-to-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/add-to-cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/all.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/all.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/cat1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/cat1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/cat2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/cat2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/cat3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/cat3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/emptycart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/emptycart.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/f1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/f1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/f2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/f2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/f3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/f3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/f4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/f4.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/login.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/login.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pro1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/pro1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pro2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/pro2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pro3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/pro3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pro4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/pro4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pro5.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/pro5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pro6.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/pro6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/product-details.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/product-details.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/signup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/signup.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/slide1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/slide1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/slide2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/slide2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/slide3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/slide3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/testimonials.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/testimonials.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/thumb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-duotone-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-duotone-900.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-duotone-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-duotone-900.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-light-300.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-light-300.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-light-300.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-light-300.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-thin-100.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-thin-100.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-thin-100.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-thin-100.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-v4compatibility.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-v4compatibility.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webfonts/fa-v4compatibility.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webfonts/fa-v4compatibility.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contct-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/contct-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delete-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete-cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/assets/css.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/assets/css.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/assets/js.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/assets/js.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/inc/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/inc/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/place-order.php" beforeDir="false" afterPath="$PROJECT_DIR$/place-order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/product-details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurants.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resturants-20-11.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resturants-20-11.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resturants-28-11.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resturants-28-11.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resturants.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resturants.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/categories/cat1.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/categories/cat1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/products/pro2.png" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/products/pro2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/restaurants/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/restaurants/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/driver/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/driver/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/layout/inc/counter.php" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/layout/inc/counter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/logout.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,21 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/opt/lampp/htdocs/resturants/restaurant/layout",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/opt/lampp/htdocs/resturants/restaurant/layout&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/restaurant/layout" />
@@ -248,6 +57,9 @@
       <recent name="$PROJECT_DIR$/admin" />
       <recent name="$PROJECT_DIR$/uploads/products" />
       <recent name="$PROJECT_DIR$/uploads/categories" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/restaurant" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -263,6 +75,8 @@
       <workItem from="1700348922057" duration="11850000" />
       <workItem from="1701114623360" duration="9166000" />
       <workItem from="1701292188636" duration="16388000" />
+      <workItem from="1701445726549" duration="632000" />
+      <workItem from="1701552336552" duration="3695000" />
     </task>
     <task id="LOCAL-00001" summary="28-11">
       <option name="closed" value="true" />
@@ -289,5 +103,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="28-11" />
     <option name="LAST_COMMIT_MESSAGE" value="28-11" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/restaurant/categories.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
