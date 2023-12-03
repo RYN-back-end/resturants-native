@@ -33,7 +33,7 @@ $selectAllCartResult = runOneQuery($selectAllCartSql);
                 <a href="about-us.html" class="nav-link">About us</a>
             </li>
             <li>
-                <a href="restaurants.html" class="nav-link">Restaurants</a>
+                <a href="restaurants.php" class="nav-link">Restaurants</a>
             </li>
             <li>
                 <a href="contct-us.html" class="nav-link">Contact us</a>

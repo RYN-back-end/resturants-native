@@ -89,7 +89,6 @@ require_once 'layout/inc/header.php'
     </section>
 
 
-
     <section class="resturant-section">
 
         <!-- categories -->
@@ -116,7 +115,8 @@ require_once 'layout/inc/header.php'
                     </button>
                 </div>
                 <?php
-            }   if (isset($_GET['warning'])) {
+            }
+            if (isset($_GET['warning'])) {
                 ?>
                 <div class="alert alert-warning" role="alert" style="text-align: right">
                     <?php echo $_GET['warning']; ?>
@@ -133,7 +133,10 @@ require_once 'layout/inc/header.php'
                     <div class="swiper-slide">
                         <div class="category_card <?php echo $cat_id == 'all' ? 'active' : '' ?>">
                             <div class="icon">
-                                <img src="assets/images/all.png" alt="">
+                                <a>
+                                    <a style="text-align: center" href="<?php echo $fullUrl . '&cat_id=all' ?>"><img src="assets/images/all.png"
+                                                                                          alt=""></a>
+                                </a>
                             </div>
                             <h5><a href="<?php echo $fullUrl . '&cat_id=all' ?>">Browse All</a></h5>
                         </div>
@@ -145,7 +148,9 @@ require_once 'layout/inc/header.php'
                             <div class="swiper-slide">
                                 <div class="category_card <?php echo $cat_id == $row['cat_id'] ? 'active' : '' ?>">
                                     <div class="icon">
-                                        <img src="<?php echo $row['cat_image'] ?? '' ?>" alt="">
+                                        <a style="text-align: center" href="<?php echo $fullUrl . '&cat_id=' . $row['cat_id'] ?>">
+                                            <img src="<?php echo $row['cat_image'] ?? '' ?>" alt="">
+                                        </a>
                                     </div>
                                     <h5>
                                         <a href="<?php echo $fullUrl . '&cat_id=' . $row['cat_id'] ?>"><?php echo $row['cat_name'] ?? '' ?></a>

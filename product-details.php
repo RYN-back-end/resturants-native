@@ -21,7 +21,7 @@ $categoryResult = runOneQuery("SELECT * FROM menu_categories WHERE cat_id = {$se
 $restaurantResult = runOneQuery("SELECT * FROM restaurants WHERE restaurant_id = {$selectTheProductResult['restaurant_id']}");
 
 
-$customer_id = $_SESSION['user']['Customer_id'];
+$customer_id = $_SESSION['user']['Customer_id']??0;
 $item_id = $_GET['id'] ?? 0;
 
 $selectCountSql = "SELECT * FROM `cart` where `customer_id` = $customer_id And `item_id` = {$item_id}";
